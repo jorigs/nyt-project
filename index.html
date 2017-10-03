@@ -46,8 +46,10 @@
           let d = $("<div>");
           d.addClass("abstract");
           d.text(thisResult.abstract);
-
-          $("#posts").prepend(a,b,c,d);
+          let e = $("<div>");
+          e.addClass("link");
+          e.html('<a href = "' + thisResult.web_url + '" target = "_blank">' + thisResult.web_url + '</a>');
+          $("#posts").prepend(a,b,c,d,e);
 
         }
         
